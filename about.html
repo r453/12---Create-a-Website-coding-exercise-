@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--Laurea ammattikorkeakoulu | Verkkosivujen kehittäminen R0244-3027 | 12 - Create a Website (coding exercise)-->
+<html lang="en">
+  <head>
+    <!--Hakukone rajoitukset-->
+    <meta name="robots" content="index, nofollow, noindex">
+    <meta name="googlebot" content="index, nofollow, noindex">
+    <meta name="googlebot-news" content="index, nofollow, nosnippet">
+    <title>Kusti.net</title>
+   
+    <!--Skaalautuvuus, sivuston kuvaus ja merkistö-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Kusti.net skydive photography">
+    <meta charset="utf-8">
+   
+    <!-- CSS | Käytetään CDN-optiota ja noudetaan min-konfiguraatio Bootstrapista-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"  integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+   
+    <!-- Muutamia gallerian ja dark mode switchin vaatimia lisämäärittelyitä paikallisesti-->
+    <link rel="stylesheet" href="/css/local.styles.css">
+   
+    <!-- Javascript | Lisätään oma java-skripti dark mode switch:iä varten-->
+    <script src="/js/toggle.theme.js"></script>
+  </head>
+  
+  <body>
+    
+    <!--Sivun container ja sävymäärittely-->
+    <div class="container bg-light">
+
+      <!--Navigointipalkki ylös-->
+      <div class="row">
+        <div class="container-fluid container col-6">
+          <nav class="navbar navbar-expand-md">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link" href="index.html">Home</a>
+              <a class="nav-item nav-link active" href="#">About</a>
+              <a class="nav-item nav-link" href="gallery.html">Gallery</a>
+            </div>
+          </nav>
+        </div>
+        
+        <div class="container-fluid container col-6">
+          <nav class="navbar navbar-expand-md">
+            <div class="navbar-nav">
+              <button type="button" class="btn btn-outline-secondary btn-sm" onclick="ToggleTheme()">Dark mode</button>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <!--Päälohko-->
+      <!--Määrittelyt osin esimerkeistä https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_theme_me_complete&stacked=h-->
+      <div class="row">
+    
+        <!--Vasen lohko | Kuva-->
+        <div class="col-6 col-md-4 media">
+          <img src="/pics/pic3.jpg" class="img-responsive margin" style="width:100%" alt="Skydiving instructor eating wild strawberries on drop zone. Vesivehmaa 2013.">
+        </div>
+
+        <!--oikea lohko | Teksti-->
+        <div class="col-6 col-md-4 site-data">
+          <h4>About me</h4>
+          <p class="text-justify">I did my first skydive in June 1994. Since then, I've logged numerous skydives with wonderful people, in beautiful places, and during exciting events and competitions.</p>
+          <p class="text-justify">My main fire of emotion in skydiving has always been freefall photography, but I also held various instructor ratings for two decades.</p>
+          <p class="text-justify">In my opinion, serious camera flying is one of the most demanding disciplines in skydiving. Therefore, nowadays, I focus more on just-for-fun jumping with friends and other toys instead of camera flying, as the number of my annual skydives has been increasing.</p>
+        </div>
+      </div>
+    </div>
+
+  <!--CSS-validointi tägi-->
+  <div class="row">
+    <div class="col-12 text-center">
+    <br>
+      <a href="http://jigsaw.w3.org/css-validator/check/referer">
+      <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+      </a>
+    </div>
+  </div>
+    
+  <!--Tekijänoikeushuomautus-->
+    <hr>
+    <div class="row col-12 site-data">
+      <p class="text-center">All contents copyright Ahti Mansner 1994-2023</p>
+    </div>
+    
+  </body>
+</html>
